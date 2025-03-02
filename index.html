@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub App</title>
+    <link rel="stylesheet" href="styel.css" />
+  </head>
+  <body>
+    <header>
+      <h1>GitHub</h1>
+      <h3 id="bio">Bio will appear here</h3>
+      <img src="#" alt="User Avatar" id="avatar" />
+    </header>
+    <main>
+      <div class="left">
+        <div class="search-by-user">
+          <h3>Search By User</h3>
+          <div class="search-area">
+            <label for="username-input">Username:</label>
+            <input
+              type="text"
+              placeholder="Enter GitHub Username"
+              id="username-input"
+            />
+            <button class="search-user">Get User</button>
+          </div>
+        </div>
+        <div class="topics">
+          <h3>Topics</h3>
+          <div class="languages">
+            <button data-lang="JavaScript">JavaScript</button>
+            <button data-lang="HTML">HTML</button>
+            <button data-lang="CSS">CSS</button>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="repos">
+          <div class="repos-header">
+            <h2>Username: <span id="username">N/A</span></h2>
+            <h2>Repos: <span id="repos-count">0</span></h2>
+            <h2>Followers: <span id="followers">0</span></h2>
+          </div>
+          <div class="repos-content">
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

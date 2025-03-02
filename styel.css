@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+:root {
+  --main-color: blueviolet;
+}
+header {
+  color: #fff;
+  background-color: var(--main-color);
+  text-align: center;
+  height: 10vh;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+header h1 {
+  /* padding-top: 10px; */
+  letter-spacing: 2px;
+}
+#avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+main {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+main .left {
+  /* background-color: red; */
+  width: 30%;
+  height: 100vh;
+  padding: 30px;
+  position: fixed;
+  /* top: 0; */
+  left: 0;
+}
+.search-by-user h3,
+.topics h3 {
+  letter-spacing: 1.8px;
+  padding: 15px;
+  color: #fff;
+  background-color: var(--main-color);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.search-area,
+.languages {
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  padding: 30px;
+  border: 2px solid var(--main-color);
+}
+
+.search-user {
+  width: 100%;
+  padding: 8px;
+  color: #fff;
+  background-color: var(--main-color);
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-size: 18px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  font-weight: bold;
+}
+#username-input {
+  padding: 15px;
+  width: 100%;
+  margin-top: 8px;
+  font-size: 16px;
+}
+
+.search-user:hover {
+  background-color: transparent;
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+}
+.topics {
+  margin-top: 15px;
+  /* border: 1px solid v; */
+}
+.languages {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  
+}
+
+.languages button {
+  background-color: var(--main-color);
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+}
+main .right {
+  /* background-color: red; */
+  width: 70%;
+  /* height: 100vh; */
+  padding: 30px;
+}
+main .right .repos .repos-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  border: 1px solid #000;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+.repos-content{
+    margin-top: 25px;
+}
+.repos-content a{
+display: flex;
+/* gap: 150px; */
+justify-content: space-between;
+text-decoration: none;
+text-transform: capitalize;
+background-color: var(--main-color);
+padding: 15px;
+border-radius: 5px;
+transition: 0.3s ease-in-out;
+color: #fff;
+font-weight: bold;
+font-size: 18px;
+margin: 15px 0;
+}
+.repos-content a:hover{
+    background-color: rgb(61, 7, 111);
+}
